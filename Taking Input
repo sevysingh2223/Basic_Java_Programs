@@ -1,0 +1,25 @@
+import java.util.Scanner;
+public class TakingInput {
+    public static void main(String[] args) {
+        
+    System.out.println("Enter your name");
+    Scanner scanner = new Scanner(System.in);
+    String fullName = scanner.nextLine();
+    
+    System.out.println("Enter your ID");
+    int Id = scanner.nextInt();
+    
+    scanner.nextLine();
+    
+    System.out.println("Enter address");
+    String add = scanner.nextLine();
+
+    System.out.println("Enter Age");
+    int age = scanner.nextInt();
+    System.out.println("NAME IS:" + fullName);
+    System.out.println("ID IS:" + Id);
+    System.out.println("ADDRESS IS :" + add);
+    System.out.println("AGE IS:" + age);
+    scanner.close();
+}
+}
