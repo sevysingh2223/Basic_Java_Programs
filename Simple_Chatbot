@@ -1,0 +1,27 @@
+import java.util.Scanner;
+import java.util.Date;
+
+public class ChatBot {
+    public static void main(String[] args) {
+        System.out.println("Enter your message");
+        Scanner scanner= new Scanner(System.in);
+        
+        String msg = scanner.nextLine();
+
+        if(msg.equals("hello") || msg.equals("hey") || msg.equals("hi") )
+        {
+            System.out.println("Hello Dear  .......");
+        }
+        else if(msg.equals("date"))
+        {
+            Date date = new Date();
+            System.out.println("Date is" + date);
+        }
+        else{
+            System.out.println("I Dont Understand");
+        }
+scanner.close();
+
+    }
+    
+}
