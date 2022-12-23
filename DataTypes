@@ -1,0 +1,29 @@
+import java.math.BigDecimal;
+import java.math.BigInteger;
+
+public class Datatypes {
+    public static void main(String[] args) {
+        byte b = 12;       //primitive have methods
+        short s = 122;
+        int i = 343232;
+        double d = 12.4;
+        float f =34.44f; 
+        ///below are called wrapper class
+        Byte B1=12;         //non primitive dont have methods ,,, these are not normal variables but they can have some extra methods
+        Integer i1 =1244;
+
+        char c = 'h';  //only single character is stored by char data type
+        int c1 = 'e';  // it will store the ASCII VALUE    A WILL START WITH 65 & a WITH 95 
+        System.out.println(c1);
+        String str = "hello world....";
+        BigInteger n= new BigInteger("84842148521125984225588");
+        BigInteger m= new BigInteger("2");
+        n.add(m);
+        System.out.println(n.add(m));
+        BigDecimal x2 = new BigDecimal("3423");
+        
+
+
+    }
+    
+}
