@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class TechNum {
+    public static int Tech(int n){
+        int a = n % 100;
+        int b = n/100;
+        int c = a + b;
+        int d = c*c;
+        return d;
+    }
+
+    public static void main(String[] args) {
+        System.out.println("Enter Number");
+        Scanner scan = new Scanner(System.in);
+        int n = scan.nextInt();
+        int m = Tech(n);
+        if(m==n){
+            System.out.println(n + " is a Tech Number");
+        }
+        else{
+            System.out.println(n + " is a not Tech Number");
+        }
+    }
+    
+}
