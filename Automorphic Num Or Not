@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class AutoMorphic {
+    public static void Auto(int n){
+        int res = n * n;
+        int a = res%100;
+        System.out.println("Number Is : " + n);
+        System.out.println("Square Of Number Is : " + res);
+        if(a == n){
+            System.out.println("True");
+        }
+        else{
+            System.out.println("False");
+        }
+    }
+    public static void main(String[] args) {
+        System.out.println("Enter Number");
+        Scanner scan = new Scanner(System.in);
+        int n = scan.nextInt();
+        Auto(n);
+    }
+}
