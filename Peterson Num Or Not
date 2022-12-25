@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+public class PeterSon {
+    public static int Pete(int n){
+        if(n==0){
+            return sum;
+        }
+        int mul=1;
+        int a = n % 10;
+        for(int i = a;i>0;i--){
+            mul = mul * i;
+        }
+        sum = sum + mul;
+        return Pete(n/10);
+    }
+
+    static int sum =0;
+    public static void main(String[] args) {
+        System.out.println("Enter Number");
+        Scanner scan = new Scanner(System.in);
+        int n = scan.nextInt();
+        int m = Pete(n);
+        if(m==n){
+            System.out.println(n + " is a Peterson Number");
+        }
+        else{
+            System.out.println(n + " is a not Peterson Number");
+        }
+    }
+}
